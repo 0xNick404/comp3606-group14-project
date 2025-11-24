@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <path
+        android:fillColor="@color/purple_700"
+        android:pathData="M0,50 Q25,0 50,50 T100,50 V100 H0 Z" />
+    <!--
+        Path Breakdown:
+        M0,50     -> Move to the left edge, halfway down.
+        Q25,0     -> Define a control point for the curve (pulling the curve upwards).
+        50,50     -> Define the end point of the first curve (center of the view).
+        T100,50   -> Create a smooth second curve to the right edge.
+        V100      -> Draw a vertical line down to the bottom.
+        H0        -> Draw a horizontal line back to the left edge.
+        Z         -> Close the path.
+    -->
+</vector>
